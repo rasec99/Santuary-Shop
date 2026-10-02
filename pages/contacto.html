@@ -21,12 +21,25 @@
             <li><a href="./carrito.html">🛒</a></li>
         </ul>
     </header>
-
-    <form action="procesar.js" method="post">
-        <label>Nombre: <input type="text" name="nombre" required></label>
-        <label>Correo: <input type="email" name="correo" required></label>
-        <label>Telefono: <input type="number" name="telefono" required></label>
-        <button type="submit">Enviar</button>
-    </form>
+    
+    <main class="contacto">
+        <form class="formulario" action="https://formspree.io/f/xeaqrlbd" method="POST">
+            <label>Nombre:
+                <input type="text" name="nombre" required>
+            </label><br>
+            
+            <label>Email:
+                <input type="email" name="email" required>
+            </label><br>
+            
+            <label>Mensaje:
+                <textarea name="mensaje" required></textarea>
+            </label><br>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    
+    <footer class="footer">Esta pagina la diseño César Morán</footer>
 </body>
 </html>
