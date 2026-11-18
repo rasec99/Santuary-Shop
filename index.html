@@ -8,18 +8,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
     <title>Inicio</title>
 </head>
+
 <body>
     <header class="header">
         <p class="header_logo">
             <a href="index.html" class="logo">
-                <img src="./images/logosololetras.jpg" alt="Sanctuary Shop" width="200">
+                <img src="./img/logosololetras.jpg" alt="Sanctuary Shop" width="200">
             </a>
         </p>
         <nav class="header_nav">
             <ul>
                 <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./pages/contacto.html">Contacto</a></li>
-                <li><a href="./pages/carrito.html">🛒</a></li>
+                <li><a href="./pages/carrito.html">🛒 <span class="contador-carrito">0</span> </a></li>
             </ul>
         </nav>    
     </header>
@@ -37,41 +38,42 @@
         <section class="productos-inicio">
 
             <h2>Algunos de nuestros productos</h2>
+            <p id="mensaje-carrito" role="status"></p>
             
             <div id="contenedor-tarjeta" class="contenedor-tarjeta">
                 <article class="tarjeta-producto">
-                    <img src="./images/fallout4.jpg" alt="Fallout 4">
+                    <img src="./img/fallout4.jpg" alt="Fallout 4">
                     <h3>Fallout 4</h3>
                     <p>$12</p>
-                    <button class="boton-carrito">Agregar al carrito</button>
+                    <button class="boton-carrito" data-id="fallout4">Agregar al carrito</button>
                 </article>
 
                 <article class="tarjeta-producto">
-                    <img src="./images/skyrim.jpg" alt="The Elder Scrolls V: Skyrim">
+                    <img src="./img/skyrim.jpg" alt="The Elder Scrolls V: Skyrim">
                     <h3>The Elder Scrolls V: Skyrim</h3>
                     <p>$24</p>
-                    <button class="boton-carrito">Agregar al carrito</button>
+                    <button class="boton-carrito" data-id="skyrim">Agregar al carrito</button>
                 </article>
 
                 <article class="tarjeta-producto">
-                    <img src="./images/gtav.jpg" alt="GTAV">
+                    <img src="./img/gtav.jpg" alt="GTAV">
                     <h3>Grand Theft Auto V</h3>
                     <p>$30</p>
-                    <button class="boton-carrito">Agregar al carrito</button>
+                    <button class="boton-carrito" data-id="gtav">Agregar al carrito</button>
                 </article>
 
                 <article class="tarjeta-producto">
-                    <img src="./images/darksoulsremastered.jpg" alt="Dark Souls Remastered">
+                    <img src="./img/darksoulsremastered.jpg" alt="Dark Souls Remastered">
                     <h3>Dark Souls Remastered</h3>
                     <p>$32</p>
-                    <button class="boton-carrito">Agregar al carrito</button>
+                    <button class="boton-carrito" data-id="darksouls">Agregar al carrito</button>
                 </article>
 
                 <article class="tarjeta-producto">
-                    <img src="./images/rdr2.jpg" alt="RDR2">
+                    <img src="./img/rdr2.jpg" alt="RDR2">
                     <h3>Red Dead Redemption II</h3>
                     <p>$60</p>
-                    <button class="boton-carrito">Agregar al carrito</button>
+                    <button class="boton-carrito" data-id="rdr2">Agregar al carrito</button>
                 </article>
             </div>
 
@@ -79,6 +81,8 @@
     </main>
 
     <footer class="footer">Esta pagina la diseño César Morán</footer>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>
 

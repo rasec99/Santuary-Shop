@@ -12,11 +12,11 @@ header {
 }
 
 .logo img {
-    width: 320px;
+    width: 250px;
     height: auto;
     display: block;
 
-    padding: 20px;
+    padding: 5px;
 }
 
 nav a {
